@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobe Tour - Help</title>
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://kit.fontawesome.com/c0a9717a9e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="branding">
+                    <img src="./img/image.png" alt="">
+                </div>
+                <div class="header__nav">
+                    <ul>
+                        <li class="group cursor-pointer"><a href="" class="group-hover:text-dark">Overview</a></li>
+                        <li class="group cursor-pointer"><a href="" class="group-hover:text-dark">Examples</a></li>
+                        <li class="group cursor-pointer"><a href="" class="group-hover:text-dark">Tour</a></li>
+                        <li class="group cursor-pointer"><a href="" class="group-hover:text-dark">Blog</a></li>
+                        <li class="group cursor-pointer"><a href="" class="group-hover:text-dark">Help</a></li>
+                    </ul>
+                </div>
+                <div class="header__actions">
+                    <ul>
+                        <li class="group cursor-pointer"><a href="" class="group-hover:text-dark">Overview</a></li>
+                        <li class="group cursor-pointer"><a href="" class="group-hover:text-dark">Examples</a></li>
+                        <li class="group cursor-pointer"><a href="" class="group-hover:text-dark">Tour</a></li>
+                        <li class="group cursor-pointer"><a href="" class="group-hover:text-dark">Blog</a></li>
+                        <li class="group cursor-pointer"><a href="" class="group-hover:text-dark">Help</a></li>
+                    </ul>
+                    <div class="header__download">
+                        <a href="">Download</a>
+                    </div>
+                </div>
+                <div class="toggle__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="links">
+        <div class="container">
+            <div class="links__text">
+                <h1>Lobe <span>Help</span></h1>
+                <p>Everything you need to know to train great machine learning models with Lobe.</p>
+            </div>
+            <div class="links__wrapper">
+                <div class="links__scroll">
+                    <ul>
+                        <li class="faq__nav__link active" id="faq_1"><a href="javascript:void(0)">Welcome</a></li>
+                        <li class="faq__nav__link" id="faq_2"><a href="javascript:void(0)">Label</a></li>
+                        <li class="faq__nav__link" id="faq_3"><a href="javascript:void(0)">Train</a></li>
+                        <li class="faq__nav__link" id="faq_4"><a href="javascript:void(0)">Results</a></li>
+                        <li class="faq__nav__link" id="faq_5"><a href="javascript:void(0)">Play</a></li>
+                        <li class="faq__nav__link" id="faq_6"><a href="javascript:void(0)">Export</a></li>
+                        <li class="faq__nav__link" id="faq_7"><a href="javascript:void(0)">Improving</a></li>
+                        <li class="faq__nav__link" id="faq_8"><a href="javascript:void(0)">Tips</a></li>
+                    </ul>
+                </div>
+                <div class="links__content">
+                    <div class="faq__content active" id="faq_1-content">
+                        <div class="links__item">
+                            <h4>What is Lobe?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Lobe is a free, private desktop application that has everything you need to take your machine learning ideas from prototype to production.</p></li>
+                                <li><img src="./img/check.png" alt=""><p><a href="">Label</a> your examples</p></li>
+                                <li><img src="./img/check.png" alt=""><p><a href="">Train</a> a model</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Evaluating training <a href="">Results</a></p></li>
+                                <li><img src="./img/check.png" alt=""><p><a href="">Play</a> with your model</p></li>
+                                <li><img src="./img/check.png" alt=""><p><a href="">Export</a> and use your model in an app</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>What is a machine learning?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Machine learning is software that learns to perform a task from a collection of examples rather than through a person explicitly defining rules and formulas. This learning software is called a <span>model</span>. Teaching a model through examples is called <span>training</span>.</p></li>
+                                <li><p>Learn more in this <a href="">beginner crach course</a>.</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>What kind of machine learning can I train with Lobe?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>This version of Lobe learns to look at images using <span>image classification</span> - categorizing an image into a single label overall. We are working to expand to more types of problems and data in future versions.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq__content" id="faq_2-content">
+                        <div class="links__item">
+                            <h4>What is labelling?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Labeling is assigning categories to your images to create examples that teach Lobe. These <span>examples</span> are commonly known as a <span>dataset</span>. From this dataset, Lobe will learn to automatically predict a label for a given image.</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>How do i create a dataset?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p><span>Import and label your images in Lobe.</span></p></li>
+                                <li><img src="./img/check.png" alt=""><p><span>Images</span> - import common image files directly from your computer. Lobe supports JPEG, PNG, BMP, and WebP formats.</p></li>
+                                <li><img src="./img/check.png" alt=""><p><span>Camera</span> - use any connected camera source to capture images directly in Lobe. You can optionally provide a label for these images. Hold down the camera button to capture a burst of images.</p></li>
+                                <li><p><span>Import an existing dataset.</span></p></li>
+                                <li><img src="./img/check.png" alt=""><p><span>Folders</span> - import existing labeled images by using folder names as the labels.</p></li>
+                                <li><p><span>You can create new labels or edit existing ones by using the text box in the bottom corner of each image..</span></p></li>
+                                <li><p class="italic font-light"><span>Note.</span></p></li>
+                                <li><img src="./img/check.png" alt=""><p>The max image size Lobe can process is 178,956,970 pixels. For a square image, that is about 13,300 x 13,300 pixels. We recommend staying lower-resolution for faster processing because Lobe will resize and crop your image to a 224 x 224 square.</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>What types of images should I collect?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li class="flex-col"><h5>Collect images that you expect to see in the real world.</h5><p>Lobe can only learn the patterns that exist in the images you provide as examples. Collect images from the same source you expect to use with your exported model.</p></li>
+                                <li class="flex-col"><h5>Capture as many variations as possible.</h5><p>Try to capture all the variations that naturally occur by collecting images in different conditions. Try different backgrounds, lighting, orientations, or zoom. This helps Lobe learn what parts of the image are useful for making predictions and what is noise.</p></li>
+                                <li class="flex-col"><h5>Make sure your content is visible in the center square of the image.</h5><p>While training your model, Lobe crops the center square of your images.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq__content" id="faq_3-content">
+                        <div class="links__item">
+                            <h4>What is training?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Training is how your model learns to predict the correct labels from your examples. You can think of your examples as a collection of flashcards. During training, your model will continually look through the flashcards and try to find similar patterns that help it guess the right answers.</p></li>
+                                <li><p>Read more <a href="">machine learning basics</a></p></li>
+                                <li><p>Read more about <a href="">labeling your examples</a></p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>How do i start training?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Lobe automatically starts training when your examples meet the minimum requirements. To start training, you need:</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Imported images to <a href="">label as examples</a></p></li>
+                                <li><img src="./img/check.png" alt=""><p>At least two labels</p></li>
+                                <li><img src="./img/check.png" alt=""><p>At least five images per label</p></li>
+                                <li><p>Lobe will also follow best practices to continue training when you make changes to your examples. If you make large changes or add/remove labels, Lobe will reset training and start training a new model.</p></li>
+                                <li><p>After automatic training has completed, you can manually optimize your model to train for longer for better real-world performance (<span>File > Optimize Model</span>).</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>How long will training take?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Training time is quite variable and depends on how hard it is to distinguish between the labels in your examples and how many examples you have. It can take anywhere from minutes to hours, and sometimes days for very large problems.</p></li>
+                                <li><p>You can hover over the training progress to see a time estimate. This training time estimate is updated every few seconds based on your progress and computer’s current processing speed. You may see it fluctuate if you are performing other tasks on your computer as available CPU and memory change.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq__content" id="faq_4-content">
+                        <div class="links__item">
+                            <h4>What are my training result?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Your results show you which images your model is predicting correctly and incorrectly. Correct predictions have green labels and incorrect predictions have red labels. The width of the label bar represents how confident the model was in that prediction.</p></li>
+                                <li><p>Hovering over a predicted label will show the true label you gave that image. The more correct the predictions, the better the model is performing.</p></li>
+                                <li><p>You can view and sort your images in different ways to check:</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Whether your model is successfully learning all the labels with <span>View > All Images</span> selected.</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Approximately how well it will work on new images with <span>View > Test Images</span> selected. <a href="">Learn more about test images</a>.</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Which images and labels confuse your model by selecting your individual labels in the sidebar.</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>How do I see labels that are confused with one another?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Select your individual labels in the sidebar to see results specific to that label. Lobe will show you which other labels are commonly confused with this one.</p></li>
+                                <li><p>Select your individual labels in the sidebar to see results specific to that label. Lobe will show you which other labels are commonly confused with this one.</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>How do I see images that confuse the model?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>To see where your model is most confused, look at the most confident incorrect predictions and the least confident correct predictions.</p></li>
+                                <li><a href="./img/check.png"></a><p>Select <span>View > Correct</span> First to view your predictions sorted by most confident to least confident. Try to find any patterns where your model was very confident in its wrong prediction.</p></li>
+                                <li><a href="./img/check.png"></a><p>Select <span>View > Incorrect First</span> to view your predictions sorted by least confident to most confident. See where your model is least confident with its correct predictions.</p></li>
+                                <li><p>Collect more variations of images that have similar patterns to these two cases to help your model improve.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq__content" id="faq_5-content">
+                        <div class="links__item">
+                            <h4>How can I play with my trained model?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Use images from your computer or use the webcam as a video feed to test your model on new images live. Try to actively trick your model and see patterns where it is getting images incorrect. Help improve you model by giving feedback on its predictions.</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>Can I correct an incorrect prediction?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>To give your model feedback, you can edit the prediction text box directly and add the image and label as an example. Alternatively, click the <span class="italic">correct</span> or <span class="italic">incorrect</span> buttons on the image to add it as an example. Lobe will automatically train with these new examples to continually improve.</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>Can I view multiple images at once?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Currently, you can only view a single image at a time or use your webcam as a video feed.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq__content" id="faq_6-content">
+                        <div class="links__item">
+                            <h4>How do i use my model?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Your model is a collection of files that other programs can load to run predictions. These files store both the structure of your model and the weights that are a result of training.</p></li>
+                                <li><p>You can directly upload your model to <a href="">Power Platform</a> to use in Power Apps or Power Automate. You can also use the model files locally in your own app or in most major cloud platforms to create an API. Lobe also hosts your model as a local API to help kickstart your app development.</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>What is Power Platform?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Power Platform is Microsoft’s no-code/low-code platform for building applications and automation flows for your business. Use your model trained in Lobe with Power Apps and Power Automate to add intelligence to your business solutions.</p></li>
+                                <li><p>Learn more about Power Platform <a href="">here</a>.</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>How do I export my model to Power Platform?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>You can easily upload your model to AI Builder to use in the Power Platform. Select Power Platform on the Export tab and sign into your work or school Microsoft account. Upload your model and view it in AI Builder within your Power Platform account.</p></li>
+                                <li><p>Learn more about Power Platform <a href="">here</a>.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq__content" id="faq_7-content">
+                        <div class="links__item">
+                            <h4>How can I improve my model?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Your examples are your model’s source of truth about the world. Here are some best practices for building successful projects:</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Understand your problem - start simple, expand over time. Break your scenario down into smaller experiments to prototype and then expand over time.</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Lobe only learns from the examples you import. Try to collect examples that cover the different types of images your model will see and make predictions on in the future.</p></li>
+                                <li><img src="./img/check.png" alt=""><p>More images always help - new and unique images are better. The more unique and different the images are, the better your model will learn to generalize.</p></li>
+                                <li><img src="./img/check.png" alt=""><p>If you can’t classify the label from looking at an image, it will also be difficult for Lobe. Make the image content as large and relevant to your label as possible.</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>Why is Lobe not predicting well on new images in Use?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Compare the images in Use with the images in your examples:</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Your model may have memorized your examples instead of learning to generalize to new images. This is commonly called overfitting. Check <a href="">Results</a> to see if your model is overfitting.</p></li>
+                                <li><img src="./img/check.png" alt=""><p>These new images are not represented by your examples. Try to play with edge cases and ‘trick’ Lobe as much as possible. Make sure your examples contain all these new variations and conditions seen from Use. You can add new images as examples directly from Use so that Lobe can continually improve.</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>Why is there always a prediction even when nothing is in the image?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Lobe will always predict one of your labels even if your image does not contain any related content. If you expect your model to see these types of images, create a ‘None’ label and add variations of these images as examples. You can use this ‘None’ label as a placeholder when waiting for relevant predictions.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq__content" id="faq_8-content">
+                        <div class="links__item">
+                            <h4>How can I learn more about Lobe?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Follow announcements on our website and social media:</p></li>
+                                <li><img src="./img/check.png" alt=""><p><a href="">Website</a></p></li>
+                                <li><img src="./img/check.png" alt=""><p><a href="">Twitter</a></p></li>
+                                <li><img src="./img/check.png" alt=""><p><a href="">Facebook</a></p></li>
+                                <li><img src="./img/check.png" alt=""><p><a href="">Reddit</a></p></li>
+                                <li><p>Watch our <a href="">intro tour</a> for a tutorial.</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>What keyboard shortcuts are supported?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p><span>Globe</span></p></li>
+                                <li><img src="./img/check.png" alt=""><p>Check for updates: ctrl/cmd + shift + U</p></li>
+                                <li><p><span>Open Screen</span></p></li>
+                                <li><img src="./img/check.png" alt=""><p>New project: ctrl/cmd + N</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Close Lobe: ctrl/cmd + W</p></li>
+                                <li><p><span>Project Screen</span></p></li>
+                                <li><img src="./img/check.png" alt=""><p>Import data: ctrl/cmd + I</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Webcam import: ctrl/cmd + shift + I</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Export model: ctrl/cmd + E</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Optimize model: ctrl/cmd + shift + O</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Switch to Label: ctrl/cmd + 1</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Switch to Train: ctrl/cmd + 2</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Switch to Play: ctrl/cmd + 3</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Project settings: ctrl/cmd + comma</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Select all data: ctrl/cmd + A</p></li>
+                                <li><img src="./img/check.png" alt=""><p>View options: ctrl/cmd + J</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Duplicate this project: ctrl/cmd + shift + S</p></li>
+                                <li><img src="./img/check.png" alt=""><p>Close project window (go back to open screen): ctrl/cmd + W</p></li>
+                            </ul>
+                        </div>
+                        <div class="links__item">
+                            <h4>Why is my computer running slowly during training?<i class="fa-solid fa-chevron-down"></i></h4>
+                            <ul>
+                                <li><p>Training is a very computation-heavy process. Lobe will use a lot of memory and CPU bandwidth to train as quickly as possible. This generally means your computer will have less CPU and memory available for other apps to use.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="links__download">
+                <h1>Train your app with Lobe</h1>
+                <div class="banner__download">
+                    <a href="">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__content">
+                    <img src="./img/image.png" alt="">
+                    <ul>
+                        <li><p>A product by Microsoft.</p></li>
+                        <li><p>All rights reserved.</p></li>
+                        <li><p>© Microsoft 2021</p></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__links__item">
+                        <h4>About<i class="fa-solid fa-chevron-down"></i></h4>
+                        <ul>
+                            <li><a href="">Download</a></li>
+                            <li><a href="">Overview</a></li>
+                            <li><a href="">Example</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__links__item">
+                        <h4>General<i class="fa-solid fa-chevron-down"></i></h4>
+                        <ul>
+                            <li><a href="">Notice</a></li>
+                            <li><a href="">License</a></li>
+                            <li><a href="">Press Inquiry</a></li>
+                            <li><a href="">Press Images</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__links__item">
+                        <h4>Resources<i class="fa-solid fa-chevron-down"></i></h4>
+                        <ul>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Tour</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__icons">
+                        <a href=""><i class="fa-solid fa-comment"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

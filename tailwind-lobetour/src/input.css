@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    @apply max-w-[140rem] mx-auto p-[1.5rem] w-full lg:max-w-[100rem];
+}
+
+@layer components{
+    .header{
+        @apply relative border-b-2 border-transparent transition-all duration-500;
+    }
+    .header.open{
+        @apply border-b-2 border-gray-400 transition-all;
+    }
+    .header__wrapper{
+        @apply flex items-center justify-between;
+    }
+    .header__nav{
+        @apply hidden lg:flex lg:justify-between;
+    }
+    .header__nav ul{
+        @apply flex items-center justify-between gap-10;
+    }
+    .header__nav ul li{
+        @apply hover:scale-[1.01] transition-all;
+    }
+    .header__nav ul li a{
+        @apply text-[1.2rem] font-semibold text-gray-400 hover:text-dark transition-all ;
+    }
+    .toggle__menu{
+        @apply bg-grey rounded-full px-[.8rem] py-[1rem] lg:hidden;
+    }
+    .toggle__menu span{
+        @apply w-[1.5rem] h-[.15rem] bg-dark block rounded-full transition-all;
+    }
+    .toggle__menu span:nth-child(2){
+        @apply my-[.3rem];
+    }
+    .toggle__menu.open span:nth-child(1){
+        @apply origin-center translate-y-[.5rem] rotate-[45deg] transition-all;
+    }
+    .toggle__menu.open span:nth-child(2){
+        @apply opacity-0 transition-all;
+    }
+    .toggle__menu.open span:nth-child(3){
+        @apply origin-center -translate-y-[.4rem] rotate-[-45deg] transition-all;
+    }
+    .header__actions{
+        @apply absolute top-[6.05rem] bg-gray-100 bg-opacity-50 w-full left-0 max-h-0 overflow-hidden transition-all duration-500 lg:relative lg:max-h-[50rem] lg:bg-transparent lg:top-0 lg:w-[15rem];
+    }
+    .header__actions.open{
+        @apply max-h-[50rem] transition-all duration-500 ease-in ;
+    }
+    .header__actions ul{
+        @apply lg:hidden;
+    }
+    .header__actions ul li{
+        @apply pt-[1.5rem] px-[1.5rem];
+    }
+    .header__actions ul li a{
+        @apply text-[1.5rem] font-semibold text-gray-400 ;
+    }
+    .header__download a{
+        @apply bg-primary px-[1rem] py-[.5rem] rounded-full text-[1.5rem] font-semibold text-white inline-block w-full text-center hover:scale-[1.05] transition-all;
+    }
+    .header__download{
+        @apply mx-[1.5rem] my-[3rem] lg:my-1 lg:mx-auto lg:w-[9rem];
+    }
+
+
+    .banner{
+        @apply py-5;
+    }
+    .banner__wrapper{
+        @apply text-center border-b-2 pb-[10rem];
+    }
+    .banner__wrapper h1{
+        @apply text-dark text-[2.5rem] font-semibold w-[20rem] mx-auto lg:text-[5rem] lg:w-[40rem];
+    }
+    .banner__wrapper h1 span{
+        @apply text-primary;
+    }
+    .banner__wrapper p{
+        @apply text-[1.2rem] lg:text-[2rem] lg:w-[41rem] lg:mx-auto;
+    }
+    .banner__wrapper img{
+        @apply rounded-[1.5rem] my-10 mx-auto lg:w-[70rem] hover:scale-105 hover:drop-shadow-2xl transition-all duration-500;
+    }
+    .banner__download{
+        @apply mt-10 flex justify-center;
+    }
+    .banner__download a{
+        @apply font-semibold bg-primary py-2 px-5 rounded-full text-light text-[1.5rem] inline-block hover:scale-110 transition-all lg:text-[1.5rem];
+    }
+    
+    .footer__wrapper{
+        @apply flex flex-col-reverse lg:grid lg:grid-cols-[_1fr,_3fr] lg:w-[70rem] lg:mx-auto;
+    }
+    .footer__content{
+        @apply text-center my-10 lg:text-left lg:my-0;
+    }
+    .footer__content img{
+        @apply mx-auto lg:mx-0;
+    }
+    .footer__content p{
+        @apply text-gray-400 py-1 px-2 lg:py-2 lg:px-0;
+    }
+    .footer__links{
+        @apply block lg:grid lg:grid-cols-4;
+    }
+    .footer__links__item h4{
+        @apply text-[1.2rem] font-semibold mb-2 cursor-pointer flex justify-between lg:cursor-default;
+    }
+    .footer__links__item h4 i{
+        @apply transition-all lg:hidden;
+    }
+    .footer__links__item h4 i.open{
+        @apply -rotate-180 transition-all;
+    }
+    .footer__links__item ul{
+        @apply max-h-0 overflow-hidden mb-5 transition-all lg:max-h-fit;
+    }
+    .footer__links__item ul.open{
+        @apply max-h-[30rem] duration-500;
+    }
+    .footer__links__item ul li{
+        @apply py-5 px-2 w-fit lg:py-1 lg:px-1;
+    }
+    .footer__links__item ul li a{
+        @apply bg-transparent inline-block text-gray-400 hover:text-dark hover:scale-110 transition-all;
+    }
+    .footer__icons a{
+        @apply text-[1.4rem] mx-2 bg-primary rounded-[50%] leading-[3rem] w-[3rem] h-[3rem] pl-[.75rem] text-light inline-block hover:scale-110 transition-all; 
+    }
+
+    /* ---------------HELP--------------- */
+    .links__text{
+        @apply text-center;
+    }
+    .links__text h1{
+        @apply text-[2.5rem] font-bold text-dark;
+    }
+    .links__text h1 span{
+        @apply text-primary;
+    }
+    .links__text p{
+        @apply text-[1.4rem] text-dark;
+    }
+    .links__wrapper{
+        @apply py-[3rem] flex justify-center mx-auto gap-[5rem];
+    }
+    .links__scroll{
+        @apply py-5 hidden w-[12rem] h-[25rem] relative lg:block; 
+    }
+    .links__scroll.sticky ul{
+        @apply fixed top-0;
+    }
+    .links__scroll ul{
+        @apply mx-5 w-[10rem];
+    }
+    .links__scroll ul li{
+        @apply my-2 py-1;
+    }
+    .faq__nav__link.active{
+        @apply bg-primary rounded-[.4rem] text-light;
+    }
+    .faq__content{
+        @apply hidden;
+    }
+    .faq__content.active{
+        @apply block;
+    }
+    .links__scroll ul li a{
+        @apply text-[1.2rem] font-semibold px-2;
+    }
+    .links__content{
+        @apply lg:w-[40rem] lg:py-3 ;
+    }
+    .links__item{
+        @apply border-b-[.1rem] py-10 lg:py-0 lg:pb-10 lg:pt-5;
+    }
+    .links__item h4{
+        @apply flex justify-between text-[1.2rem] font-bold text-dark;
+    }
+    .links__item h4 i{
+        @apply transition-all duration-700;
+    }
+    .links__item h4 i.active{
+        @apply rotate-180 transition-all duration-700;
+    }
+    .links__item ul{
+        @apply max-h-0 overflow-hidden transition-all;
+    }
+    .links__item ul.active{
+        @apply max-h-[60rem] transition-all duration-700;
+    }
+    .links__item ul li{
+        @apply py-5 flex items-start; 
+    }
+    .links__item ul li a{
+        @apply underline hover:font-semibold;
+    }
+    .links__item ul li p span{
+        @apply font-bold;
+    }
+    .links__item ul li h5{
+        @apply font-bold;
+    }
+    .links__download{
+        @apply border-b-2 pb-10 pt-[8rem];
+    }
+    .links__download h1{
+        @apply text-[3rem] font-bold text-dark text-center;
+    }
+}

@@ -13,8 +13,9 @@ toggleMenu.addEventListener("click", () => {
   mobileNav.classList.toggle("open");
 });
 
-const links = document.querySelectorAll(".footer__items h4");
-links.forEach((baba) => {
+//  footer LINKS
+const flinks = document.querySelectorAll(".footer__links__item h4");
+flinks.forEach((baba) => {
   baba.addEventListener("click", () => {
     baba.nextElementSibling.classList.toggle("open");
     baba.querySelector("i").classList.toggle("open");

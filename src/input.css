@@ -9,171 +9,132 @@
 
 @layer components{
     .header{
-        @apply relative bg-white;
+        @apply relative border-b-2 border-transparent transition-all duration-500;
     }
     .header.open{
-        @apply border-solid border-b border-gray-500;
+        @apply border-b-2 border-gray-400 transition-all;
     }
     .header__wrapper{
         @apply flex items-center justify-between;
     }
-   .header__nav{
-    @apply hidden;
-   }
-   .header__actions{
-    @apply bg-white bg-opacity-90 absolute top-[6rem] left-0 w-full max-h-0 overflow-hidden transition-[.8s] ease-in lg:relative lg:top-0 lg:w-auto lg:overflow-hidden;
-   }
-   .header__actions.open{
-    @apply max-h-[50rem] transition-[.8s] ease-in;
-   }
-   .header__actions ul li{
-    @apply px-[1.5rem] pt-[1.5rem];
-   }
-   .header__actions ul li a{
-    @apply text-[1.3rem] text-gray-500 font-semibold;
-   }
-   .header__download a{
-    @apply inline-block px-[-1rem] py-[.5rem] bg-primary w-full rounded-full text-center text-light text-[1.5rem] font-semibold hover:scale-[1.05] transition-all;
-}
-   .toggle__menu{
-    @apply bg-grey rounded-full px-[.8rem] py-[1rem] lg:hidden;
-}
-.toggle__menu span{
-    @apply w-[1.5rem] h-[.15rem] bg-dark block rounded-full;
-}
- .toggle__menu span:nth-child(2){
-    @apply my-[.3rem];
-} 
-.toggle__menu.open span:first-child{
-    @apply translate-x-0 translate-y-[8px] rotate-[225deg] transition-[.5s] ease-in-out;
-}
-.toggle__menu.open span:last-child{
-    @apply translate-x-0 translate-y-[-5px] rotate-[-225deg] transition-[.5s] ease-in-out;
-}
-.toggle__menu.open span:nth-child(2){
-    @apply opacity-0 transition-[-5s] ease-out;
-}
-
-@media (min-width: 1024px){
-    .header__action ul{
-        @apply hidden;
-    }
-    .toggle__menu{
-        @apply hidden;
-    }
     .header__nav{
-        @apply block;
+        @apply hidden lg:flex lg:justify-between;
     }
     .header__nav ul{
-        @apply flex gap-3;
+        @apply flex items-center justify-between gap-10;
+    }
+    .header__nav ul li{
+        @apply hover:scale-[1.01] transition-all;
     }
     .header__nav ul li a{
-        @apply text-gray-500 text-[1.2rem] font-medium hover:scale-[1.05] transition-all
+        @apply text-[1.2rem] font-semibold text-gray-400 hover:text-dark transition-all ;
     }
-    .header__actions .header__download a{
-        @apply absolute top-[-4.5rem] right-[4rem] hover:scale-[1.05] transition-all;
+    .toggle__menu{
+        @apply bg-grey rounded-full px-[.8rem] py-[1rem] lg:hidden;
     }
-}
+    .toggle__menu span{
+        @apply w-[1.5rem] h-[.15rem] bg-dark block rounded-full transition-all;
+    }
+    .toggle__menu span:nth-child(2){
+        @apply my-[.3rem];
+    }
+    .toggle__menu.open span:nth-child(1){
+        @apply origin-center translate-y-[.5rem] rotate-[45deg] transition-all;
+    }
+    .toggle__menu.open span:nth-child(2){
+        @apply opacity-0 transition-all;
+    }
+    .toggle__menu.open span:nth-child(3){
+        @apply origin-center -translate-y-[.4rem] rotate-[-45deg] transition-all;
+    }
+    .header__actions{
+        @apply absolute top-[6.05rem] bg-gray-100 bg-opacity-50 w-full left-0 max-h-0 overflow-hidden transition-all duration-500 lg:relative lg:max-h-[50rem] lg:bg-transparent lg:top-0 lg:w-[15rem];
+    }
+    .header__actions.open{
+        @apply max-h-[50rem] transition-all duration-500 ease-in ;
+    }
+    .header__actions ul{
+        @apply lg:hidden;
+    }
+    .header__actions ul li{
+        @apply pt-[1.5rem] px-[1.5rem];
+    }
+    .header__actions ul li a{
+        @apply text-[1.5rem] font-semibold text-gray-400 ;
+    }
+    .header__download a{
+        @apply bg-primary px-[1rem] py-[.5rem] rounded-full text-[1.5rem] font-semibold text-white inline-block w-full text-center hover:scale-[1.05] transition-all;
+    }
+    .header__download{
+        @apply mx-[1.5rem] my-[3rem] lg:my-1 lg:mx-auto lg:w-[9rem];
+    }
 
 
     .banner{
-        @apply bg-white mb-4;
+        @apply py-5;
     }
-    .title h1{
-        @apply text-dark text-center text-[2.5rem] font-bold lg:text-[4rem];
+    .banner__wrapper{
+        @apply text-center border-b-2 pb-[10rem];
     }
-    .title span{
+    .banner__wrapper h1{
+        @apply text-dark text-[2.5rem] font-semibold w-[20rem] mx-auto lg:text-[5rem] lg:w-[40rem];
+    }
+    .banner__wrapper h1 span{
         @apply text-primary;
     }
-    .title p{
-        @apply text-center ml-[4rem] mr-[4rem] mb-[4rem] text-[1rem] lg:text-[1.8rem] lg:w-[40rem] lg:items-center lg:ml-[38rem];
+    .banner__wrapper p{
+        @apply text-[1.2rem] lg:text-[2rem] lg:w-[41rem] lg:mx-auto;
     }
-    .vid img{
-        @apply rounded-[1.5rem] h-[100%] hover:scale-[1.01] transition-all mb-[3rem] lg:max-w-5xl lg:ml-96;
+    .banner__wrapper img{
+        @apply rounded-[1.5rem] my-10 mx-auto lg:w-[70rem] hover:scale-105 hover:drop-shadow-2xl transition-all duration-500;
     }
-    .text h2{
-        @apply text-dark text-center ml-[6rem] mr-[6rem] text-[2rem] font-bold lg:text-[5rem] lg:text-center lg:ml-[40rem] lg:mr-[40rem];
+    .banner__download{
+        @apply mt-10 flex justify-center;
     }
-    .btn a{
-        @apply inline-block px-1 py-[.5rem] bg-primary mt-[1rem] ml-[10rem] w-[8rem] rounded-full text-center text-light text-[1rem] font-semibold hover:scale-[1.05] transition-all lg:ml-[52rem] lg:mr-52 lg:w-52 lg:text-[1.5rem] lg:p-4;
+    .banner__download a{
+        @apply font-semibold bg-primary py-2 px-5 rounded-full text-light text-[1.5rem] inline-block hover:scale-110 transition-all lg:text-[1.5rem];
     }
 
 
-.footer{
-    @apply pb-[3rem];
-}
-.footer .footer__wrapper{
-    @apply pt-[3rem] border-solid border-t border-gray-500;
-}
-.footer .footer-items:not(:first-child){
-    @apply mt-[1rem];
-}
-.footer .footer-items h4{
-    @apply flex justify-between items-center text-[1.5rem] font-medium pb-[1rem];
-}
-.footer .footer-items h4 i.open{
-    @apply rotate-[180deg] transition-[.5s] ease-in;
-}
-.footer .footer-items ul{
-    @apply px-[1rem] max-h-0 overflow-hidden transition-[.5s] ease-in;
-}
-.footer .footer-items ul.open{
-    @apply max-h-[20rem] transition-[.5s] ease-in;
-}
-.footer .footer-items ul li{
-    @apply pb-[1rem] cursor-pointer hover:scale-[1.01] transition-[.5s] ease-in;
-}
-.footer .footer-items ul li a{
-    @apply text-[1rem] text-grey font-medium;
-}
-.footer .icon{
-    @apply flex gap-[1rem] mt-[1.5rem];
-}
-.footer .icon i{
-    @apply text-light text-[1.5rem] bg-primary py-[.5rem] px-[.5rem] rounded-full hover:scale-[1.10] transition-[.5s] ease-in;
-}
-.footer .branding {
-    @apply mt-[3rem] text-center items-center;
-}
-.footer .branding .img{
-    @apply flex justify-center mb-[1.5rem]
-}
-.footer .branding .copyright p:nth-child(2){
-    @apply my-[1rem]
-}
-
-@media (min-width:1024px){
-    .footer{
-        @apply max-w-[1317px] mx-auto;
+    .footer__wrapper{
+        @apply flex flex-col-reverse lg:grid lg:grid-cols-[_1fr,_3fr] lg:w-[70rem] lg:mx-auto;
     }
-    .footer .footer-branding .branding-img{
-        @apply block;
+    .footer__content{
+        @apply text-center my-10 lg:text-left lg:my-0;
     }
-    .footer .footer-items h4 i{
-        @apply hidden;
+    .footer__content img{
+        @apply mx-auto lg:mx-0;
     }
-    .footer .footer-items ul{
-        @apply max-h-[100%] px-0;
+    .footer__content p{
+        @apply text-gray-400 py-1 px-2 lg:py-2 lg:px-0;
     }
-    .footer .right{
-        @apply flex justify-center items-start gap-[6rem];
+    .footer__links{
+        @apply block lg:grid lg:grid-cols-4;
     }
-    .footer .footer__wrapper{
-        @apply flex flex-row-reverse justify-center items-start gap-[6rem];
+    .footer__links__item h4{
+        @apply text-[1.2rem] font-semibold mb-2 cursor-pointer flex justify-between lg:cursor-default;
     }
-    .footer .footer-items:not(:firs-child){
-        @apply mt-0;
+    .footer__links__item h4 i{
+        @apply transition-all lg:hidden;
     }
-    .footer .icon{
-        @apply mt-0;
+    .footer__links__item h4 i.open{
+        @apply -rotate-180 transition-all;
     }
-    .branding {
-        @apply mt-0;
+    .footer__links__item ul{
+        @apply max-h-0 overflow-hidden mb-5 transition-all lg:max-h-fit;
     }
-    .copyright{
-        @apply text-left;
+    .footer__links__item ul.open{
+        @apply max-h-[30rem] duration-500;
     }
-}
+    .footer__links__item ul li{
+        @apply py-5 px-2 w-fit lg:py-1 lg:px-1;
+    }
+    .footer__links__item ul li a{
+        @apply bg-transparent inline-block text-gray-400 hover:text-dark hover:scale-110 transition-all;
+    }
+    .footer__icons a{
+        @apply text-[1.4rem] mx-2 bg-primary rounded-[50%] leading-[3rem] w-[3rem] h-[3rem] pl-[.75rem] text-light inline-block hover:scale-110 transition-all; 
+    }
 
 
 
