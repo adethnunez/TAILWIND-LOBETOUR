@@ -11,100 +11,204 @@
     .header{
         @apply relative bg-white;
     }
+    .header.open{
+        @apply border-solid border-b border-gray-500;
+    }
     .header__wrapper{
         @apply flex items-center justify-between;
     }
-    .header__nav{
+   .header__nav{
+    @apply hidden;
+   }
+   .header__actions{
+    @apply bg-white bg-opacity-90 absolute top-[6rem] left-0 w-full max-h-0 overflow-hidden transition-[.8s] ease-in lg:relative lg:top-0 lg:w-auto lg:overflow-hidden;
+   }
+   .header__actions.open{
+    @apply max-h-[50rem] transition-[.8s] ease-in;
+   }
+   .header__actions ul li{
+    @apply px-[1.5rem] pt-[1.5rem];
+   }
+   .header__actions ul li a{
+    @apply text-[1.3rem] text-gray-500 font-semibold;
+   }
+   .header__download a{
+    @apply inline-block px-[-1rem] py-[.5rem] bg-primary w-full rounded-full text-center text-light text-[1.5rem] font-semibold hover:scale-[1.05] transition-all;
+}
+   .toggle__menu{
+    @apply bg-grey rounded-full px-[.8rem] py-[1rem] lg:hidden;
+}
+.toggle__menu span{
+    @apply w-[1.5rem] h-[.15rem] bg-dark block rounded-full;
+}
+ .toggle__menu span:nth-child(2){
+    @apply my-[.3rem];
+} 
+.toggle__menu.open span:first-child{
+    @apply translate-x-0 translate-y-[8px] rotate-[225deg] transition-[.5s] ease-in-out;
+}
+.toggle__menu.open span:last-child{
+    @apply translate-x-0 translate-y-[-5px] rotate-[-225deg] transition-[.5s] ease-in-out;
+}
+.toggle__menu.open span:nth-child(2){
+    @apply opacity-0 transition-[-5s] ease-out;
+}
+
+@media (min-width: 1024px){
+    .header__action ul{
         @apply hidden;
     }
-    .header__nav ul{
-        @apply lg:flex m-[1rem];
-    }
     .toggle__menu{
-        @apply bg-grey rounded-full px-[.8rem] py-[1rem];
+        @apply hidden;
     }
-    .toggle__menu span{
-        @apply w-[1.5rem] h-[.15rem] bg-dark block rounded-full;
+    .header__nav{
+        @apply block;
     }
-     .toggle__menu span:nth-child(2){
-        @apply my-[.3rem];
-    } 
-    .toggle__menu.open span:first-child{
-        @apply translate-x-0 translate-y-[8px] rotate-[225deg] transition-[.5s] ease-in-out;
+    .header__nav ul{
+        @apply flex gap-3;
     }
-    .toggle__menu.open span:last-child{
-        @apply translate-x-0 translate-y-[-5px] rotate-[-225deg] transition-[.5s] ease-in-out;
+    .header__nav ul li a{
+        @apply text-gray-500 text-[1.2rem] font-medium hover:scale-[1.05] transition-all
     }
-    .toggle__menu.open span:nth-child(2){
-        @apply opacity-0 transition-[-5s] ease-out;
+    .header__actions .header__download a{
+        @apply absolute top-[-4.5rem] right-[4rem] hover:scale-[1.05] transition-all;
     }
-    .header__actions{
-        @apply absolute bg-gray-100 bg-opacity-50 top-[6.05rem] left-[0] w-full max-h-0 overflow-hidden transition-all;
-    }
-    .header__actions.open{
-        @apply max-h-[50rem] transition-all;
-    }
-    .header__actions ul li{
-        @apply pt-[1.5rem] px-[1.5rem];
-    }
-    .header__actions ul li a{
-        @apply text-[1.5rem] font-semibold text-gray-400;
-    }
-    .header__download {
-        @apply mx-[1.5rem] my-[3rem];
-    }
-    .header__download a{
-        @apply inline-block px-[-1rem] py-[.5rem] bg-primary w-full rounded-full text-center text-light text-[1.5rem] font-semibold hover:scale-[1.05] transition-all;
-    }
-
+}
 
 
     .banner{
-        @apply bg-white;
+        @apply bg-white mb-4;
     }
     .title h1{
-        @apply text-primary text-center text-[2.5rem] font-bold ;
+        @apply text-dark text-center text-[2.5rem] font-bold lg:text-[4rem];
     }
     .title span{
-        @apply text-dark;
+        @apply text-primary;
     }
     .title p{
-        @apply text-center ml-[4rem] mr-[4rem] mb-[4rem] text-[1rem];
+        @apply text-center ml-[4rem] mr-[4rem] mb-[4rem] text-[1rem] lg:text-[1.8rem] lg:w-[40rem] lg:items-center lg:ml-[38rem];
     }
-    .vid{
-        @apply rounded-[10rem] h-[100%] hover:scale-[1.01] transition-all mb-[3rem];
+    .vid img{
+        @apply rounded-[1.5rem] h-[100%] hover:scale-[1.01] transition-all mb-[3rem] lg:max-w-5xl lg:ml-96;
     }
     .text h2{
-        @apply text-dark text-center ml-[6rem] mr-[6rem] text-[2rem] font-bold;
+        @apply text-dark text-center ml-[6rem] mr-[6rem] text-[2rem] font-bold lg:text-[5rem] lg:text-center lg:ml-[40rem] lg:mr-[40rem];
     }
     .btn a{
-        @apply inline-block px-[-1rem] py-[.5rem] bg-primary mt-[1rem] ml-[10rem] w-[8rem] rounded-full text-center text-light text-[1rem] font-semibold hover:scale-[1.05] transition-all;
+        @apply inline-block px-1 py-[.5rem] bg-primary mt-[1rem] ml-[10rem] w-[8rem] rounded-full text-center text-light text-[1rem] font-semibold hover:scale-[1.05] transition-all lg:ml-[52rem] lg:mr-52 lg:w-52 lg:text-[1.5rem] lg:p-4;
     }
 
 
-    .links{
-        @apply bg-white;
-    }
-    .links__drop{
-        @apply mt-[3rem];
-    }
-    .links__item:not(:first-child){
-       @apply m-[3rem];
+.footer{
+    @apply pb-[3rem];
+}
+.footer .footer__wrapper{
+    @apply pt-[3rem] border-solid border-t border-gray-500;
+}
+.footer .footer-items:not(:first-child){
+    @apply mt-[1rem];
+}
+.footer .footer-items h4{
+    @apply flex justify-between items-center text-[1.5rem] font-medium pb-[1rem];
+}
+.footer .footer-items h4 i.open{
+    @apply rotate-[180deg] transition-[.5s] ease-in;
+}
+.footer .footer-items ul{
+    @apply px-[1rem] max-h-0 overflow-hidden transition-[.5s] ease-in;
+}
+.footer .footer-items ul.open{
+    @apply max-h-[20rem] transition-[.5s] ease-in;
+}
+.footer .footer-items ul li{
+    @apply pb-[1rem] cursor-pointer hover:scale-[1.01] transition-[.5s] ease-in;
+}
+.footer .footer-items ul li a{
+    @apply text-[1rem] text-grey font-medium;
+}
+.footer .icon{
+    @apply flex gap-[1rem] mt-[1.5rem];
+}
+.footer .icon i{
+    @apply text-light text-[1.5rem] bg-primary py-[.5rem] px-[.5rem] rounded-full hover:scale-[1.10] transition-[.5s] ease-in;
+}
+.footer .branding {
+    @apply mt-[3rem] text-center items-center;
+}
+.footer .branding .img{
+    @apply flex justify-center mb-[1.5rem]
+}
+.footer .branding .copyright p:nth-child(2){
+    @apply my-[1rem]
+}
 
+@media (min-width:1024px){
+    .footer{
+        @apply max-w-[1317px] mx-auto;
     }
-    .links__drop__item h4{
-        @apply text-dark flex items-center justify-between text-[1.3rem];
+    .footer .footer-branding .branding-img{
+        @apply block;
     }
-    .links__drop__item i{
-        @apply transition-[.5s];
+    .footer .footer-items h4 i{
+        @apply hidden;
     }
-    .links__drop__item.open{
-        @apply rotate-180 transition-[.5s];
+    .footer .footer-items ul{
+        @apply max-h-[100%] px-0;
     }
-    .links__drop__item ul{
-        @apply hidden transition-[.5s] max-h-0 m-[0, 2rem];
+    .footer .right{
+        @apply flex justify-center items-start gap-[6rem];
     }
-    .links__drop.open ul{
-        @apply max-h-[30rem] transition-[.5s];
+    .footer .footer__wrapper{
+        @apply flex flex-row-reverse justify-center items-start gap-[6rem];
     }
+    .footer .footer-items:not(:firs-child){
+        @apply mt-0;
+    }
+    .footer .icon{
+        @apply mt-0;
+    }
+    .branding {
+        @apply mt-0;
+    }
+    .copyright{
+        @apply text-left;
+    }
+}
+
+
+
+
+.faq .container{
+    @apply max-w-[70rem];
+}
+.faq__wrapper{
+    @apply lg:grid lg:grid-cols-[1.5fr,2.5fr] items-start;
+}
+.faq__tab{
+    @apply hidden lg:block;
+}
+.faq__question{
+@apply py-[2rem] border-b-[1px];
+}
+.faq__question h4{
+    @apply flex items-center justify-between;
+}
+.faq__question h4 i{
+    @apply transition ease-in-out duration-[.5s];
+}
+.faq__question h4 i.open{
+    @apply transform rotate-[180deg];
+}
+.faq__tab__content__answer{
+    @apply max-h-[0rem] overflow-hidden  transition-all;
+}
+.faq__tab__content__answer.open{
+    @apply max-h-[50rem] transition-all;
+}
+.faq__nav li{
+    @apply p-[2rem] max-w-[15rem] ;
+}
+.faq__nav li.active{
+    @apply bg-primary rounded-xl ;
+}
 }
