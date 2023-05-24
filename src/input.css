@@ -138,38 +138,136 @@
 
 
 
+    .links__text{
+        @apply text-center;
+    }
+    .links__text h1{
+        @apply text-[2.5rem] font-bold text-dark;
+    }
+    .links__text h1 span{
+        @apply text-primary;
+    }
+    .links__text p{
+        @apply text-[1.4rem] text-dark lg:text-[1.5rem] lg:ml-[42rem] lg:mr-[42rem];
+    }
+    .links__wrapper{
+        @apply py-[3rem] flex justify-center mx-auto gap-[5rem];
+    }
+    .links__scroll{
+        @apply py-5 hidden w-[12rem] h-[25rem] relative lg:block; 
+    }
+    .links__scroll.sticky ul{
+        @apply fixed top-0;
+    }
+    .links__scroll ul{
+        @apply mx-5 w-[10rem];
+    }
+    .links__scroll ul li{
+        @apply my-2 py-1;
+    }
+    .faq__xz{
+        @apply mt-[2rem] font-light relative
+    }
+    .faq__nav__link.active{
+        @apply bg-primary rounded-[.4rem] text-light;
+    }
+    .faq__content{
+        @apply hidden;
+    }
+    .faq__content.active{
+        @apply block;
+    }
+    .links__scroll ul li a{
+        @apply text-[1.2rem] font-semibold px-2;
+    }
+    .links__content{
+        @apply lg:w-[40rem] lg:py-3 ;
+    }
+    .links__item{
+        @apply border-b-[.1rem] py-10 lg:py-0 lg:pb-10 lg:pt-5;
+    }
+    .links__item h4{
+        @apply flex justify-between text-[1.2rem] font-bold text-dark;
+    }
+    .links__item h4 i{
+        @apply transition ease-in-out duration-[.5s];
+    }
+    .links__item h4 i.open{
+        @apply transform rotate-[180deg];
+    }
+    .links__item h4 i.active{
+        @apply rotate-180 transition-all duration-700;
+    }
+    .links__item ul{
+        @apply max-h-0 overflow-hidden transition-all;
+    }
+    .links__item ul.active{
+        @apply max-h-[60rem] transition-all duration-700;
+    }
+    .links__item ul li{
+        @apply py-5 flex items-start; 
+    }
+    .links__item ul li a{
+        @apply underline hover:font-semibold;
+    }
+    .links__item ul li p span{
+        @apply font-bold;
+    }
+    .links__item ul li h5{
+        @apply font-bold;
+    }
+    .links__download{
+        @apply border-b-2 pb-10 pt-[8rem];
+    }
+    .links__download h1{
+        @apply text-[3rem] font-bold text-dark text-center;
+    }
 
-.faq .container{
-    @apply max-w-[70rem];
-}
-.faq__wrapper{
-    @apply lg:grid lg:grid-cols-[1.5fr,2.5fr] items-start;
-}
-.faq__tab{
-    @apply hidden lg:block;
-}
-.faq__question{
-@apply py-[2rem] border-b-[1px];
-}
-.faq__question h4{
-    @apply flex items-center justify-between;
-}
-.faq__question h4 i{
-    @apply transition ease-in-out duration-[.5s];
-}
-.faq__question h4 i.open{
-    @apply transform rotate-[180deg];
-}
-.faq__tab__content__answer{
-    @apply max-h-[0rem] overflow-hidden  transition-all;
-}
-.faq__tab__content__answer.open{
-    @apply max-h-[50rem] transition-all;
-}
-.faq__nav li{
-    @apply p-[2rem] max-w-[15rem] ;
-}
-.faq__nav li.active{
-    @apply bg-primary rounded-xl ;
-}
+
+
+    .exam{
+        @apply bg-dirty
+    }
+    .exam .exam__wrapper{
+        @apply p-[3rem] lg:grid lg:grid-cols-2 lg:gap-[4rem] lg:m-auto lg:w-[80rem] 
+    }
+    .exam__wrapper{
+        @apply bg-dirty;
+    }
+    .exam__text{
+        @apply text-center m-auto  ;
+    }
+    .exam__text h1{
+        @apply text-[2.9rem] font-bold text-dark lg:text-[4rem];
+    }
+    .exam__text h1 span{
+        @apply text-primary;
+    }
+    .card__text{
+        @apply ml-[1.1rem]
+    }
+    .exam__text p{
+        @apply text-[1.4rem] text-dark mb-[3rem] lg:text-[1.9rem] lg:ml-[38rem] lg:mr-[38rem]
+    }
+    .card__text h3{
+        @apply text-[1.1rem] font-semibold mt-[1.5rem] 
+    }
+    .card .card__text p{
+       @apply mb-[1.5rem]
+    }
+    .exam__wrapper .card{
+        @apply bg-light rounded-[1rem] drop-shadow-2xl mb-[2rem]
+    }
+    .card video{
+        @apply rounded-[1rem] rounded-b drop-shadow-2xl 
+    }
+    .exam__download{
+        @apply border-b-2 pb-10 pt-[8rem];
+    }
+    .exam__download h1{
+        @apply text-[2.5rem] font-bold text-dark text-center m-auto ml-[5rem] mr-[5rem] lg:text-[4.5rem];
+    }
+
+
+
 }

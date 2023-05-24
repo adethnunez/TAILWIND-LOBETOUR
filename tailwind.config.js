@@ -9,6 +9,7 @@ module.exports = {
         light: '#ffffff',
         primary: '#04DDB2',
         grey: '#E8EDF0',
+        dirty: '#fafafa',
       },
       screens: {
         'sm': '640px',
