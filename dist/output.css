@@ -1397,6 +1397,180 @@ video {
   }
 }
 
+.blog {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
+.blog .blog__wrapper {
+  padding: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .blog .blog__wrapper {
+    margin: auto;
+    display: grid;
+    width: 80rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4rem;
+  }
+}
+
+.blog__wrapper {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
+.blog__text {
+  margin: auto;
+  text-align: center;
+}
+
+.blog__text h1 {
+  font-size: 2.9rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .blog__text h1 {
+    font-size: 4rem;
+  }
+}
+
+.blog__text h1 span {
+  --tw-text-opacity: 1;
+  color: rgb(4 221 178 / var(--tw-text-opacity));
+}
+
+.box__text {
+  margin-left: 1.1rem;
+}
+
+.box__text p {
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  --tw-text-opacity: 1;
+  color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+.box__text h3 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.box .box__text p {
+  margin-bottom: 1.1rem;
+  font-size: 1rem;
+}
+
+.box__text h4 {
+  margin-bottom: 3rem;
+  cursor: pointer;
+  font-size: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.box {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.box:hover {
+  --tw-scale-x: 1.01;
+  --tw-scale-y: 1.01;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.blog img {
+  margin: auto;
+  border-radius: 1rem;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.boxs {
+  cursor: pointer;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+  padding: 3rem;
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.boxs:hover {
+  --tw-scale-x: 1.01;
+  --tw-scale-y: 1.01;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 1024px) {
+  .boxs {
+    margin: auto;
+    width: 40rem;
+    gap: 4rem;
+  }
+}
+
+.blog .boxs img {
+  margin: auto;
+  border-radius: 1rem;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.boxs__text {
+  margin-left: 1.1rem;
+}
+
+.boxs__text p {
+  margin-bottom: 3rem;
+  font-size: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+.boxs__text h3 {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.boxs .box__text p {
+  margin-bottom: 1.1rem;
+  font-size: .1rem;
+}
+
+.boxs__text h4 {
+  cursor: pointer;
+  font-size: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.dor .boxes {
+  padding: 5rem;
+}
+
 .visible {
   visibility: visible;
 }

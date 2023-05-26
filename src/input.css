@@ -232,7 +232,7 @@
         @apply p-[3rem] lg:grid lg:grid-cols-2 lg:gap-[4rem] lg:m-auto lg:w-[80rem] 
     }
     .exam__wrapper{
-        @apply bg-dirty;
+        @apply bg-dirty ;
     }
     .exam__text{
         @apply text-center m-auto  ;
@@ -259,7 +259,7 @@
         @apply bg-light rounded-[1rem] drop-shadow-2xl mb-[2rem]
     }
     .card video{
-        @apply rounded-[1rem] rounded-b drop-shadow-2xl 
+        @apply rounded-[1rem] rounded-b drop-shadow-2xl
     }
     .exam__download{
         @apply border-b-2 pb-10 pt-[8rem];
@@ -269,5 +269,69 @@
     }
 
 
+
+    .blog{
+        @apply bg-dirty;
+    }
+    .blog .blog__wrapper{
+        @apply p-[3rem] lg:grid lg:grid-cols-2 lg:gap-[4rem] lg:m-auto lg:w-[80rem] 
+    }
+    .blog__wrapper{
+        @apply bg-dirty ;
+    }
+    .blog__text{
+        @apply text-center m-auto  ;
+    }
+    .blog__text h1{
+        @apply text-[2.9rem] font-bold text-dark lg:text-[4rem];
+    }
+    .blog__text h1 span{
+        @apply text-primary;
+    }
+    .box__text{
+        @apply ml-[1.1rem]
+    }
+    .box__text p{
+        @apply text-[1.4rem] text-dark mb-[3rem] 
+    }
+    .box__text h3{
+        @apply text-[1.1rem] font-semibold mt-[1.5rem] 
+    }
+    .box .box__text p{
+       @apply mb-[1.1rem] text-[1rem]
+    }
+    .box__text h4{
+        @apply text-[1rem] text-gray-400 mb-[3rem] cursor-pointer
+    }
+     .box{
+        @apply bg-light rounded-[1rem] drop-shadow-2xl mb-[2rem] cursor-pointer hover:scale-[1.01] transition-all
+    }
+    .blog img{
+        @apply rounded-[1rem] rounded-b drop-shadow-2xl m-auto
+    }
+    .boxs{
+        @apply rounded-[1rem] drop-shadow-2xl cursor-pointer hover:scale-[1.01] transition-all p-[3rem]  bg-dirty lg:gap-[4rem] lg:m-auto lg:w-[40rem] 
+    }
+    .blog .boxs img{
+        @apply rounded-[1rem] rounded-b drop-shadow-2xl m-auto
+    }
+    .boxs__text{
+        @apply ml-[1.1rem]
+    }
+    .boxs__text p{
+        @apply text-[1rem] text-dark mb-[3rem] 
+    }
+    .boxs__text h3{
+        @apply text-[1.1rem] font-semibold mt-[1.5rem] 
+    }
+    .boxs .box__text p{
+       @apply mb-[1.1rem] text-[.1rem]
+    }
+    .boxs__text h4{
+        @apply text-[1rem] text-gray-400 cursor-pointer
+    }
+    .dor .boxes{
+        @apply p-[5rem];
+    }
 
 }
