@@ -558,6 +558,7 @@ video {
 
 .header {
   position: relative;
+  z-index: 999;
   border-bottom-width: 2px;
   border-color: transparent;
   transition-property: all;
@@ -565,7 +566,14 @@ video {
   transition-duration: 500ms;
 }
 
+@media (min-width: 1024px) {
+  .header {
+    padding-left: 8rem;
+  }
+}
+
 .header.open {
+  z-index: 999;
   border-bottom-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
@@ -689,6 +697,7 @@ video {
   position: absolute;
   top: 6.05rem;
   left: 0px;
+  z-index: 999;
   max-height: 0px;
   width: 100%;
   overflow: hidden;
@@ -710,6 +719,7 @@ video {
 }
 
 .header__actions.open {
+  z-index: 999;
   max-height: 50rem;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1084,6 +1094,12 @@ video {
   color: rgb(50 50 50 / var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px) {
+  .links__text h1 {
+    font-size: 5rem;
+  }
+}
+
 .links__text h1 span {
   --tw-text-opacity: 1;
   color: rgb(4 221 178 / var(--tw-text-opacity));
@@ -1147,7 +1163,6 @@ video {
 }
 
 .faq__xz {
-  position: relative;
   margin-top: 2rem;
   font-weight: 300;
 }
@@ -1200,6 +1215,7 @@ video {
 
 .links__item h4 {
   display: flex;
+  cursor: pointer;
   justify-content: space-between;
   font-size: 1.2rem;
   font-weight: 700;
@@ -1208,17 +1224,19 @@ video {
 }
 
 .links__item h4 i {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   transition-duration: .5s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .links__item h4 i.open {
-  --tw-rotate: 180deg;
+  --tw-rotate: -180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .links__item h4 i.active {
@@ -1334,7 +1352,7 @@ video {
 
 .exam__text p {
   margin-bottom: 3rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   --tw-text-opacity: 1;
   color: rgb(50 50 50 / var(--tw-text-opacity));
 }

@@ -9,10 +9,10 @@
 
 @layer components{
     .header{
-        @apply relative border-b-2 border-transparent transition-all duration-500;
+        @apply relative border-b-2 border-transparent transition-all duration-500 z-[999] lg:pl-[8rem];
     }
     .header.open{
-        @apply border-b-2 border-gray-400 transition-all;
+        @apply border-b-2 border-gray-400 transition-all z-[999];
     }
     .header__wrapper{
         @apply flex items-center justify-between;
@@ -48,10 +48,10 @@
         @apply origin-center -translate-y-[.4rem] rotate-[-45deg] transition-all;
     }
     .header__actions{
-        @apply absolute top-[6.05rem] bg-gray-100 bg-opacity-50 w-full left-0 max-h-0 overflow-hidden transition-all duration-500 lg:relative lg:max-h-[50rem] lg:bg-transparent lg:top-0 lg:w-[15rem];
+        @apply absolute top-[6.05rem] bg-gray-100 bg-opacity-50 w-full left-0 max-h-0 overflow-hidden transition-all duration-500 lg:relative lg:max-h-[50rem] lg:bg-transparent lg:top-0 lg:w-[15rem] z-[999];
     }
     .header__actions.open{
-        @apply max-h-[50rem] transition-all duration-500 ease-in ;
+        @apply max-h-[50rem] transition-all duration-500 ease-in z-[999] ;
     }
     .header__actions ul{
         @apply lg:hidden;
@@ -142,7 +142,7 @@
         @apply text-center;
     }
     .links__text h1{
-        @apply text-[2.5rem] font-bold text-dark;
+        @apply text-[2.5rem] font-bold text-dark lg:text-[5rem];
     }
     .links__text h1 span{
         @apply text-primary;
@@ -166,7 +166,7 @@
         @apply my-2 py-1;
     }
     .faq__xz{
-        @apply mt-[2rem] font-light relative
+        @apply mt-[2rem] font-light;
     }
     .faq__nav__link.active{
         @apply bg-primary rounded-[.4rem] text-light;
@@ -187,13 +187,13 @@
         @apply border-b-[.1rem] py-10 lg:py-0 lg:pb-10 lg:pt-5;
     }
     .links__item h4{
-        @apply flex justify-between text-[1.2rem] font-bold text-dark;
+        @apply flex justify-between text-[1.2rem] font-bold text-dark cursor-pointer;
     }
     .links__item h4 i{
-        @apply transition ease-in-out duration-[.5s];
+        @apply transition-all duration-[.5s] cursor-pointer;
     }
     .links__item h4 i.open{
-        @apply transform rotate-[180deg];
+        @apply -rotate-180 transition-all;
     }
     .links__item h4 i.active{
         @apply rotate-180 transition-all duration-700;
@@ -247,7 +247,7 @@
         @apply ml-[1.1rem]
     }
     .exam__text p{
-        @apply text-[1.4rem] text-dark mb-[3rem] lg:text-[1.9rem] lg:ml-[38rem] lg:mr-[38rem]
+        @apply text-[1.2rem] text-dark mb-[3rem] lg:text-[1.9rem] lg:ml-[38rem] lg:mr-[38rem]
     }
     .card__text h3{
         @apply text-[1.1rem] font-semibold mt-[1.5rem] 
